@@ -1,0 +1,301 @@
+/* Change the color of the application here */
+
+.feedback_form_color {
+    background: #34495e;
+}
+
+/* Change the position of the feedback button */
+
+.feedback_form_button_position {
+    left: 40px;
+    bottom: 0;
+}
+
+/* Styles for the feedback pop-up window and the feedback button */
+
+.feedback_form_button {
+    position: fixed;
+    width: auto;
+    height: auto;
+    padding: 0 1em;
+    box-shadow: 0 0 15px -5px #000;
+    border-radius: 5px 5px 0 0 ;
+    margin: 0;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    transition: box-shadow .2s;
+    z-index: 99999999;
+}
+
+.feedback_form_button:hover,
+.feedback_form_button:focus {
+    box-shadow: 0 0 18px -3px #000;
+}
+
+.feedback_form_close {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    width: 16px;
+    height: 16px;
+    background: url('img/close_bright.png') center center no-repeat;
+    background-size: cover;
+    background-color: red;
+    cursor: pointer;
+}
+
+/* Styles for the feedback form */
+
+.feedback_form_wrap {
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 13px -5px #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 300px;
+    padding: 0;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
+    z-index: 99999999;
+}
+
+.feedback_form_headline {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feedback_form_container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 50px 0 0 0;
+    overflow: hidden;
+}
+
+.feedback_form_holder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    margin: 0;
+    padding: 20px 10px 20px 10px;
+    box-sizing: border-box;
+}
+
+.feedback_rating_headline {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 20px;
+    font-size: 11px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: #606677;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.feedback_form_like_holder {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
+}
+
+.feedback_form_like {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-size: contain;
+    opacity: .7;
+}
+
+#like_yes {
+    background: url('../svg/thumb-up.svg') center center no-repeat;
+    float: left;
+    margin-left: 30px;
+}
+
+#like_no {
+    background: url('../svg/thumb-down.svg') center center no-repeat;
+    float: right;
+    margin-right: 30px;
+}
+
+.feedback_form_like:hover,
+.feedback_form_like:active {
+    opacity: 1;
+}
+
+.feedback_form_input {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #606677;
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    appearance: none;
+}
+.feedback_form_submit:hover,
+.feedback_form_submit:focus {
+    background-color: #2c3e50;
+}
+
+.feedback_form_select {
+    background: #f1f1f1 url('img/select_dark.png');
+    background-size: 12px auto;
+    background-position: 97% center;
+    background-repeat: no-repeat;
+}
+
+.feedback_form_message {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #606677;
+    margin: 0 0 10px 0;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    appearance: none;
+    resize: none;
+}
+
+.feedback_form_submit {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.feedback_form_confirm {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 60px 0 60px 0;
+    box-sizing: border-box;
+}
+
+.feedback_form_confirm_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.feedback_form_confirm_check {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    margin: -35px 0 0 -35px;
+}
+
+.feedback_form_confirm_check_inner {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/check_bright.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+}
+
+.input_necessary {
+    box-shadow: 0 0 0 1px #ff5e4b;
+    -webkit-box-shadow: 0 0 0 1px #ff5e4b;
+}
+
+.feedback_form_overlap {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #222;
+    z-index: 99999998;
+    opacity: 0;
+    transition: opacity .2s;
+}
