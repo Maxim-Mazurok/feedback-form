@@ -54,7 +54,6 @@
 /* Styles for the feedback form */
 
 .feedback_form_wrap {
-    background-color: rgba(0,0,0,.3);
     box-shadow: 0 0 13px -5px #000;
     position: absolute;
     left: 0;
@@ -85,6 +84,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
+    transition: opacity .2s;
 }
 
 .feedback_form_container {
@@ -96,6 +96,7 @@
     box-sizing: border-box;
     padding: 50px 0 0 0;
     overflow: hidden;
+    transition: opacity .2s;
 }
 
 .feedback_form_holder {
@@ -141,7 +142,7 @@
     box-sizing: border-box;
     cursor: pointer;
     background-size: contain;
-    opacity: .7;
+    opacity: .5;
 }
 
 #like_yes {
@@ -298,4 +299,31 @@
     z-index: 99999998;
     opacity: 0;
     transition: opacity .2s;
+}
+
+.feedback_form_status {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 300px;
+    box-sizing: border-box;
+    display: none;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.feedback_form_status_msg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 2em;
+    line-height: 2em;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
