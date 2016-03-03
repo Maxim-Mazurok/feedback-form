@@ -1,0 +1,26 @@
+<div class="feedback_form_wrap feedback_form_color" id="feedback_form_wrap">
+    <div class="feedback_form_headline feedback_form_color" id="feedback_form_headline">__popup_headline_text__</div>
+    <div class="feedback_form_container" id="feedback_form_container">
+        <div class="feedback_form_holder">
+            <div class="feedback_form_like_holder">
+                <div class="feedback_form_like" id="like_yes" onclick="like_yes()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 949.3 949.3"><path d="M899.3 338l-355.3-.3s20.6-84.3 24.3-123.8c2.5-27 3-54-3-81-9.3-40-19.6-65-36-96-8.8-16.5-25.8-26.7-44.3-26.7h-68.8c-27.7 0-50 22.5-50 50.2.2 46.2.2 108-.8 110-27 57-58.3 111.4-93.6 163.4-16 24-33 47-52.6 68-8.6 9.2-13.3 21.4-13.3 34v437c0 13 5 25.5 14 35 13 13.6 37 30 76.2 30 124.3-.5 325.7-1.6 469-.6 17.8 0 34.4-9.4 43.4-25l126.3-216c8.6-15 13-32 13.2-49.4l.7-259c0-27.7-22.5-50-50-50zM94.8 409.5H50c-27.6 0-50 22.4-50 50v429c0 27.6 22.4 50 50 50h44.7c27.6 0 50-22.4 50-50v-429c0-27.6-22.3-50-50-50z" fill="#27ae60"/></svg>
+                </div>
+                <div class="feedback_form_like" id="like_no" onclick="like_no()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 949.3 949.3"><path d="M49.4 610.7l355.3.3s-20.6 84.3-24.3 123.8c-2.5 27-3 54 3 81 9.3 40 19.6 65 36 96 8.8 16.5 25.8 26.7 44.3 26.7h68.8c27.7 0 50-22.5 50-50.2-.2-46.2-.2-108 .8-110 27-57 58.3-111.4 93.6-163.4 16-24 33-47 52.4-68 8.6-9.4 13.3-21.6 13.3-34V76c0-13-5-25.6-14-35-13-13.7-37-30-76.2-30-124.3.4-325.7 1.5-469 .5-17.8 0-34.4 9.4-43.4 25l-126 216c-8.7 15-13 32-13.3 49.4L0 561c0 27.6 22.5 50 50 50zM854 539.2h44.7c27.6 0 50-22.4 50-50v-429c0-27.6-22.4-50-50-50H854c-27.6 0-50 22.4-50 50v429c0 27.6 22.3 50 50 50z" fill="#c0392b"/></svg>
+                </div>
+            </div>
+            <form action="" method="post" id="feedback_form" name="feedback_form">
+                <input type="hidden" id="feedback_like" name="feedback_like" value=""/>
+                <textarea class="feedback_form_message" id="feedback_message" name="feedback_message" placeholder="__popup_comment_placeholder_text__"></textarea>
+                <input type="submit" class="feedback_form_submit feedback_form_color" id="contact_submit" value="__popup_sumbit_button_text__"/>
+            </form>
+        </div>
+    </div>
+    <div class="feedback_form_status" id="feedback_form_status">
+        <div class="feedback_form_status_msg" id="feedback_form_status_msg">
+            All Good! Thanks!
+        </div>
+    </div>
+</div>
+<div class="feedback_form_overlap" id="feedback_form_overlap"></div>
