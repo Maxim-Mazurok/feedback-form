@@ -15,17 +15,11 @@ $feedback_form = new FeedbackForm();
     ?>
 </head>
 <body>
-    <h1>Test title</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur, deserunt dolor dolore ea facere illum incidunt itaque iusto magnam neque quas recusandae repudiandae sed similique sunt tempora ullam vero!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur, deserunt dolor dolore ea facere illum incidunt itaque iusto magnam neque quas recusandae repudiandae sed similique sunt tempora ullam vero!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur, deserunt dolor dolore ea facere illum incidunt itaque iusto magnam neque quas recusandae repudiandae sed similique sunt tempora ullam vero!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur, deserunt dolor dolore ea facere illum incidunt itaque iusto magnam neque quas recusandae repudiandae sed similique sunt tempora ullam vero!</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur, deserunt dolor dolore ea facere illum incidunt itaque iusto magnam neque quas recusandae repudiandae sed similique sunt tempora ullam vero!</p>
+    <h1>Your Awesome Website</h1>
     <?php
         # Output needed for FeedbackForm html (<style>...</style>)
         echo $feedback_form->get_html();
+        echo $feedback_form->get_script();
     ?>
-    <?php include_once('src/php/feedback-form.php'); //TODO?>
 </body>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>

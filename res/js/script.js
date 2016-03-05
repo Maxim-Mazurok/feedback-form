@@ -3,7 +3,6 @@ document.getElementById('feedback_form_button').onclick = feedback_open;
 document.getElementById('feedback_form').onsubmit = submit_form;
 
 function feedback_close() {
-    /*alert('close');*/
     document.getElementById('feedback_form_wrap').style.opacity = '0';
     document.getElementById('feedback_form_overlap').style.opacity = '0';
     setTimeout(function () {
@@ -14,7 +13,6 @@ function feedback_close() {
 }
 
 function feedback_open() {
-    /*alert('open');*/
     document.getElementById('feedback_form_wrap').style.display = 'block';
     document.getElementById('feedback_form_overlap').style.display = 'block';
     setTimeout(function () {
@@ -40,25 +38,25 @@ function like_no() {
 
 function submit_form(evt) {
     evt.preventDefault();
-    feedback_like = document.getElementById("feedback_like").value;
-    feedback_message = document.getElementById("feedback_message").value;
-    feedback_location = window.location;
+    var feedback_like = document.getElementById("feedback_like").value;
+    var feedback_message = document.getElementById("feedback_message").value;
+    var feedback_location = window.location;
     xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function () {
         if (xhr.readyState == XMLHttpRequest.DONE) {
             form_submitted(xhr.responseText);
         }
-    }
-    xhr.open("POST", "src/php/feedback-form-ajax.php", true);
+    };
+    xhr.open("POST", "__ajax-receiver-url__", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send("feedback_like="+feedback_like+"&feedback_message="+feedback_message+"&feedback_location="+feedback_location);
+    xhr.send("feedback_like=" + feedback_like + "&feedback_message=" + feedback_message + "&feedback_location=" + feedback_location);
 }
 
 function form_submitted(status) {
-    if (status=='ok') {
-        msg = 'Thanks!';
+    if (status == 'ok') {
+        msg = '__popup_submitted_ok__';
     } else {
-        msg = 'Error :( Try again';
+        msg = '__popup_submitted_error__';
     }
     document.getElementById('feedback_form_status_msg').innerHTML = msg;
     document.getElementById('feedback_form_headline').style.opacity = '0';

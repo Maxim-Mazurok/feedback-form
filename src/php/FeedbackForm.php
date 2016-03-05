@@ -25,7 +25,12 @@ class FeedbackForm {
     }
 
     public function get_script() {
-        // TODO
+        $js = file_get_contents(dirname(__FILE__) . "/../../res/js/script.js");
+        $js = str_replace("__popup_submitted_ok__", $this->config['TEXT']['popup_submitted_ok'], $js);
+        $js = str_replace("__popup_submitted_error__", $this->config['TEXT']['popup_submitted_error'], $js);
+        $js = str_replace("__ajax-receiver-url__", $this->config['ADVANCED']['ajax-receiver-url'], $js);
+        $js = "<script>$js</script>";
+        return $js;
     }
 
     public function get_html() {
@@ -36,7 +41,7 @@ class FeedbackForm {
 
     protected function get_button_html() {
         $html = file_get_contents(dirname(__FILE__) . "/../../res/html/feedback-button.html");
-            $html = str_replace("__feedback_button_text__", $this->config['TEXT']['feedback_button_text'], $html);
+        $html = str_replace("__feedback_button_text__", $this->config['TEXT']['feedback_button_text'], $html);
         return $html;
     }
 
@@ -45,6 +50,7 @@ class FeedbackForm {
         $html = str_replace("__popup_headline_text__", $this->config['TEXT']['popup_headline_text'], $html);
         $html = str_replace("__popup_comment_placeholder_text__", $this->config['TEXT']['popup_comment_placeholder_text'], $html);
         $html = str_replace("__popup_sumbit_button_text__", $this->config['TEXT']['popup_sumbit_button_text'], $html);
+        $html = str_replace("__popup_submitted_ok__", $this->config['TEXT']['popup_submitted_ok'], $html);
         return $html;
     }
 
