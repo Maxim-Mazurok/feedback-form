@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=__google-font-name__);
+@import url(https://fonts.googleapis.com/css?family=__google-font-name-import__);
 
 /* Color of the application */
 
@@ -96,21 +96,6 @@
     margin: 0;
     padding: 20px 10px 20px 10px;
     box-sizing: border-box;
-}
-
-.feedback_rating_headline {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 20px;
-    font-size: 11px;
-    line-height: 20px;
-    font-family: __google-font-name__ __font-name__;
-    font-weight: 400;
-    text-align: center;
-    color: #606677;
-    letter-spacing: 1px;
-    margin: 0;
 }
 
 .feedback_form_like_holder {

@@ -17,6 +17,7 @@ class FeedbackForm {
         $style = str_replace("__main-color__", $this->config['STYLE']['main-color'], $style);
         $style = str_replace("__text-color__", $this->config['STYLE']['text-color'], $style);
         $google_font_name = (!empty($this->config['ADVANCED']['google-font-name'])) ? $this->config['ADVANCED']['google-font-name'] : "";
+        $style = str_replace("__google-font-name-import__", "$google_font_name", $style);
         $style = str_replace("__google-font-name__", "'$google_font_name',", $style);
         $style = str_replace("__font-name__", $this->config['ADVANCED']['font-name'], $style);
         $style = "<style>$style</style>";
