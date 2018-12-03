@@ -1,6 +1,8 @@
 Feedback Form by [Maxim Mazurok](http://codecanyon.net/user/maxim_mazurok)
 ====================
 
+This project was started to try the CodeCanyon platform by EvantoMarket using minimum effort. 
+
 Quick start
 ---------------------
 
